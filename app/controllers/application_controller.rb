@@ -1,7 +1,4 @@
 
-#https://github.com/americanmouths/sinatra-ar-crud-lab-v-000/blob/master/app/views/edit.erb
-
-
 require_relative '../../config/environment'
 
 class ApplicationController < Sinatra::Base
@@ -12,6 +9,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    redirect to '/articles'
 
   end
 
