@@ -1,9 +1,15 @@
-<h1>New Article</h1>
-<form action="/articles" method="POST">
-  
-  <p>Title: <input id="title" type="text" name="article[title]"></p>
-  <p>Content: <input id="content" type="text" name="article[content]"></p>
-  
-  <input type="submit" value="submit">
-  
+<form method='post' action='/articles'>
+    <ul>
+        <li>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+        </li>
+
+        <li>
+            <label for="content">Content</label>
+            <textarea type="text" name="content"
+            id="content"></textarea>
+        </li>
+    </ul>
+    <input type="submit" id="submit">
 </form>
